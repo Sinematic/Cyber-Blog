@@ -1,11 +1,11 @@
 const form = document.getElementById("form-login");
-const email = document.getElementById("email");
-const password = document.getElementById("password");
+const email = document.getElementById("label-email");
+const password = document.getElementById("label-password");
 
 const envelope = document.createElement("i");
 envelope.classList.add("fa-regular", "fa-envelope");
-form.appendChild(envelope);
+email.appendChild(envelope);
 
 const lock = document.createElement("i");
 lock.classList.add("fa-solid", "fa-lock");
-form.appendChild(lock);
+password.appendChild(lock);
