@@ -8,23 +8,27 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Righteous&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/56f1d6909e.js" crossorigin="anonymous"></script>
-    <script src="js/login.js"></script>
     <title>CyberBlog</title>
 </head>
+
 <body>
     <div id="container">
 
-        <a href="index.html">
-            <img src="images/logo.png" alt="Logo by Freepik" id="logo">
-        </a>
-        
-        <h1 id="title">Cyber Blog</h1>
+        <header>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo by Freepik" id="logo">
+            </a>
+    
+            <h1 id="title">Cyber Blog</h1>
+        </header>
+
 
         <div id="blur">
             <form id="login-form" action="">
 
+                <h2>Login</h2>
                 <label for="email" id="label-email">E-mail</label>
                 <input type="email" name="email" id="email">
     
@@ -33,11 +37,18 @@
     
                 <input type="submit" value="Log in" id="login-submit">
     
-                <button id="forgotten-password">Forgotten password ?</button>
+                <a href="recover.html" id="forgotten-password">Forgotten password</a>
+                <a href="register.html" id="forgotten-password">Register here</a>
     
             </form>
         </div>
 
+        <footer>
+
+        </footer>
+
     </div>
+
+    <script src="js/login.js"></script>
 </body>
 </html>
