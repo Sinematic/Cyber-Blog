@@ -4,8 +4,15 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #24282C;
-    font-family: "Electrolize", cursive;
 }
+
+/*
+
+font-family: 'Electrolize', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Righteous', cursive;
+
+*/
 
 * {
     box-sizing: border-box;
@@ -15,6 +22,7 @@ body {
     max-width: 1440px;
     width: 100%;
     margin: auto;
+    font-family: 'Electrolize', sans-serif;
 }
 
 header {
@@ -43,11 +51,11 @@ header:hover {
 #title {
     margin: 0;
     text-align: center;
-    font-family: "Righteous", curise;
     font-size: 72px;
     color: #ffd300;
     padding-top: 30px;
     padding-bottom: 30px;
+    font-family: 'Righteous', cursive;
 }
 
 #blur {
@@ -89,7 +97,7 @@ header:hover {
 #login-form button {
     padding: 12px 0 12px 0;
     border-radius: 0 0 15px 15px;
-    font-family: "Electrolize", cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #login-form label {
@@ -136,8 +144,8 @@ header:hover {
     border: none;
     font-size: 18px;
     font-weight: 500;
-    font-family: "Electrolize", cursive;
     border: 1px solid transparent;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #login-submit:hover {
@@ -158,12 +166,14 @@ header:hover {
     aspect-ratio: 1440 / 360;
 }
 
-#banner figcaption {
-    color: white;
-    position: relative;
-    bottom: 30px;
-    left: 90%;
+#banner #banner-title {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    margin-top: -40px;
+    padding-right: 40px;
+    text-align: end;
     z-index: 1;
+    font-style: italic;
 }
 
 #banner {
@@ -171,12 +181,12 @@ header:hover {
     width: 100%;
     max-width: 1440px;
     position: absolute;
+    top: 0;
     padding: 0;
     z-index: -1;
+    display: none;
 }
 
 #explanation {
-    position: relative;
-    top: 370px;
-    left: 20px
+    display: none;
 }
