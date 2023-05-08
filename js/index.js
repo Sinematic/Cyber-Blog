@@ -19,8 +19,6 @@ getBanner();
 
 
 info.addEventListener("click", () => {
-
-    console.log("span cliqué")
-    explanation.style.display = (explanation.style.display === "none") ? "block" : "none"
+    console.log("toto")
+    explanation.classList.toggle("slide")
 })
-
