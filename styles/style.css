@@ -28,17 +28,22 @@ font-family: 'Righteous', cursive;
 }
 
 .navbar {
-    height: 60px;
+    height: 70px;
     background-color: #24282C;
     font-family: "Righteous", cursive;
     font-size: 16px;
-    padding-top: 20px;
+    padding-top: 25px;
 }
 
 .navbar > ul {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 120px;
+    text-align: center;
+}
+
+.navbar > ul > li:hover {
+    transition-duration: 800ms;
+    transform: scale(1.15);
 }
 
 .nav-link{
@@ -53,13 +58,25 @@ font-family: 'Righteous', cursive;
     color: #dd296e;
 }
 
+#on-off {
+    color: #00FF00;
+    font-size: 18px;
+    text-align: end;
+}
+
+#on-off:hover {
+    color: #00FF00;
+    padding: 15px;
+    border-radius: 5px;
+    border-color: #00FF00;
+    background-color: #24282C;
+    transform: scale(3);
+}
+
 #title {
-    position: absolute;
-    left: 50%;
-    top: 8%;
-    transform: translate(-50%, -50%);
     font-size: 72px;
     color: #ffd300;
+    width: fit-content;
     padding: 20px 30px;
     font-family: 'Righteous', cursive;
     border-radius: 200px;
@@ -133,7 +150,7 @@ font-family: 'Righteous', cursive;
     top: 200px;
 }
 
-.fa-bars {
+.menu, .fa-bars {
     display: none;
 }
 
@@ -178,18 +195,13 @@ font-family: 'Righteous', cursive;
 
 #banner {
     margin: auto;
-    width: 100%;
-    max-width: 1440px;
-    position: absolute;
-    top: 60px;
+    width: 1440px;
     padding: 0;
-    display: none;
 }
 
-#banner #banner-title {
+#banner #banner-title { 
     color: rgba(255, 255, 255, 0.7);
     font-size: 12px;
-    margin-top: -40px;
     padding-right: 40px;
     text-align: end;
     font-style: italic;
@@ -200,26 +212,28 @@ font-family: 'Righteous', cursive;
     max-height: 360px;
     object-fit: cover;
     aspect-ratio: 1440 / 360;
+    pointer-events: none;
 }
 
 #explanation {
     display: block;
     background-color: #24282C;
     color: aliceblue;
+    max-width: 1440px;
     padding: 12px 40px 12px 15px;
     border-radius: 0px 0px 8px 8px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    position: relative;
-    bottom: 120px;
+    position: absolute;
+    bottom: 220px;
     border: 1px solid #ffd300;
     transform: translateY(0);
     transition: transform 0.8s ease-in-out;
-    z-index: -1;
+    z-index: 11111;
 }
 
 #explanation.slide {    
-    transform: translateY(142px);
+    transform: translateY(173px);
 }
 
 #info {
@@ -229,8 +243,8 @@ font-family: 'Righteous', cursive;
     border-radius: 20px;
     padding: 4px 8px;
     color: #ffd300;
-    position: absolute;
-    top: 10px;
+    position: relative;
+    bottom: 10px;
     right: 10px;
 }
 
