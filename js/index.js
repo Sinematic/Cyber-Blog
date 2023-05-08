@@ -1,5 +1,7 @@
 const container = document.getElementById("container")
 const header = document.querySelector("header")
+const info = document.getElementById("info")
+const explanation = document.getElementById("explanation")
 
 async function getBanner() {
     // APIKey = NTVDouKU0ldR4FlffcNFsG1Pd1uLWd1JTEoF7V7b
@@ -8,9 +10,17 @@ async function getBanner() {
 
     document.getElementById("banner-img").src = result.hdurl
     document.getElementById("banner-title").innerText = result.title
-    document.getElementById("explanation").innerText = result.explanation
+    explanation.innerText = result.explanation
     document.getElementById("banner").style.display = "block"
     //console.log(result)
 }
 
 getBanner();
+
+
+info.addEventListener("click", () => {
+
+    console.log("span cliqué")
+    explanation.style.display = (explanation.style.display === "none") ? "block" : "none"
+})
+

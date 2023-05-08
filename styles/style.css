@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #24282C;
+    box-sizing: border-box;
 }
 
 /*
@@ -188,5 +189,30 @@ header:hover {
 }
 
 #explanation {
-    display: none;
+    display: block;
+    background-color: #24282C;
+    color: aliceblue;
+    padding: 12px 40px 12px 15px;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    position: relative;
+    bottom: 0px;
+    border: 2px solid #ffd300;
+}
+
+#info {
+    font-size: 12px;
+    border: 2px solid #ffd300;
+    background-color: #24282C;
+    border-radius: 20px;
+    padding: 4px 8px;
+    color: #ffd300;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+footer {
+    padding-top: 800px;
 }
