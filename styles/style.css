@@ -1,11 +1,12 @@
 body {
-    max-width: 1920px;
-    background-color: #24282C;
+    max-width: 1440px;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    margin: auto;
     background: url("../images/cover.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box;
 }
 
 /*
@@ -16,23 +17,18 @@ font-family: 'Righteous', cursive;
 
 */
 
-* {
-    box-sizing: border-box;
-}
-
 #container {
-    max-width: 1440px;
     width: 100%;
     margin: auto;
     font-family: 'Electrolize', sans-serif;
+    background-color: #24282C;
 }
 
 .navbar {
-    height: 70px;
     background-color: #24282C;
     font-family: "Righteous", cursive;
     font-size: 16px;
-    padding-top: 25px;
+    padding: 25px 0px;
 }
 
 .navbar > ul {
@@ -74,12 +70,15 @@ font-family: 'Righteous', cursive;
 }
 
 #title {
-    font-size: 72px;
+    font-size: 3em;
     color: #ffd300;
     width: fit-content;
     padding: 20px 30px;
     font-family: 'Righteous', cursive;
+    position: absolute;
     border-radius: 200px;
+    top: 120px;
+    margin: auto 30px;
 }
 
 #title:hover {
@@ -209,7 +208,7 @@ font-family: 'Righteous', cursive;
 
 #banner img {
     width: 100%;
-    max-height: 360px;
+    max-width: 1440px;
     object-fit: cover;
     aspect-ratio: 1440 / 360;
     pointer-events: none;
@@ -224,7 +223,7 @@ font-family: 'Righteous', cursive;
     border-radius: 0px 0px 8px 8px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    position: absolute;
+    position: relative;
     bottom: 220px;
     border: 1px solid #ffd300;
     transform: translateY(0);
@@ -243,9 +242,9 @@ font-family: 'Righteous', cursive;
     border-radius: 20px;
     padding: 4px 8px;
     color: #ffd300;
-    position: relative;
-    bottom: 10px;
-    right: 10px;
+    margin: auto 30px;
+    top: 330px;
+    position: absolute;
 }
 
 footer {
